@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agentic AI Ninja Clinic — Build Your Own AI Agent Team in 4 Hours</title>
+  <meta name="description" content="I help you set up AI Agent Teams that do your light & heavy lifting 24/7 so you can spend more time with friends and family. Build your own Telegram & WhatsApp AI team in just 4 hours — under S$25/month to run.">
+  <meta name="keywords" content="AI workshop Singapore, AI agent training, AI agents course, no-code automation, Telegram AI, WhatsApp assistant">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://digital-ninja.netlify.app/">
+  <meta property="og:title" content="Agentic AI Ninja Clinic — Build Your AI Agent Team in 4 Hours">
+  <meta property="og:description" content="I help you set up AI Agent Teams that do your light & heavy lifting 24/7 so you can spend more time with friends and family. Build your own Telegram & WhatsApp AI team in just 4 hours — under S$25/month to run.">
+  <meta property="og:url" content="https://digital-ninja.netlify.app">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://digital-ninja.netlify.app/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Agentic AI Ninja Clinic">
+  <meta name="twitter:description" content="4-hour workshop. Build your own AI Agent Team. S$100/pax. Singapore.">
+  <meta itemprop="datePublished" content="2025-08-01">
+  <meta itemprop="dateModified" content="2026-09-10">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Course",
+      "name": "Agentic AI Ninja Clinic",
+      "description": "A beginner-friendly, 4-hour practical workshop in Singapore teaching non-technical professionals how to build custom, self-hosted AI agent teams using open-source architecture.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Agentic AI Ninja",
+        "url": "https://netlify.app"
+      },
+      "timeRequired": "PT4H",
+      "offers": {
+        "@type": "Offer",
+        "price": "100",
+        "priceCurrency": "SGD",
+        "availability": "https://schema.org"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Busy professionals, small business owners, freelancers, and beginners with zero coding experience"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I need to know how to code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not at all! We focus on visual drag-and-drop builders, plain-language prompts, and open tools. If you can use ChatGPT, you can build an AI agent."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will I actually build something?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — you will build a fully functioning, multi-step automated assistant customized to your own actual work routine before you leave the room."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the running cost after the clinic?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under S$25/month. We use open-source platforms and pay-as-you-go LLMs — no expensive SaaS subscriptions. You own everything."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there vendor lock-in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Zero. You retain 100% ownership of your workflows, scripts, and choice of language models. Nothing is locked in."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&amp;family=Outfit:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    :root {
+      --bg-dark: #0B0F17;
+      --bg-card: rgba(17, 24, 39, 0.75);
+      --bg-card-hover: rgba(26, 36, 56, 0.85);
+      --accent-cyan: #0EA5E9;
+      --accent-cyan-hover: #0284C7;
+      --accent-cyan-glow: rgba(14, 165, 233, 0.35);
+      --accent-emerald: #10B981;
+      --accent-emerald-glow: rgba(16, 185, 129, 0.3);
+      --accent-purple: #8B5CF6;
+      --text-heading: #F8FAFC;
+      --text-body: #94A3B8;
+      --text-muted: #64748B;
+      --border: rgba(226, 232, 240, 0.12);
+      --border-glow: rgba(14, 165, 233, 0.4);
+      --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+      --shadow-glow: 0 0 25px rgba(14, 165, 233, 0.18);
+    }
+    
+    html { scroll-behavior: smooth; }
+    
+    body {
+      font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+      color: var(--text-body);
+      background-color: var(--bg-dark);
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(14, 165, 233, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 85% 65%, rgba(139, 92, 246, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 50% 90%, rgba(16, 185, 129, 0.06) 0%, transparent 50%);
+      font-size: 17px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    
+    h1, h2, h3, h4, .nav-logo, .section-label, .module-num, .pricing-price, .hero-stat-num, .faq-q, .pricing-card .pricing-sub {
+      font-family: 'Outfit', 'Space Grotesk', system-ui, sans-serif;
+    }
+    
+    .ninja-icon { height: 1.5em; width: auto; vertical-align: middle; display: inline-block; filter: drop-shadow(0 0 6px var(--accent-cyan-glow)); }
+    .container { max-width: 1140px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 2; }
+    .container-wide { max-width: 1240px; }
+
+    /* Navigation */
+    .nav {
+      position: fixed; top: 0; left: 0; right: 0;
+      background: rgba(11, 15, 23, 0.88);
+      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      z-index: 100; padding: 0 24px;
+    }
+    .nav-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 72px;
+    }
+    .nav-logo {
+      font-size: 20px; font-weight: 700; color: var(--text-heading);
+      display: flex; align-items: center; gap: 10px;
+      text-decoration: none;
+    }
+    .nav-logo span {
+      background: linear-gradient(135deg, var(--accent-cyan), #0284C7);
+      color: #fff; padding: 3px 10px; border-radius: 4px; font-size: 12px; font-weight: 700; letter-spacing: 0.5px;
+    }
+    .nav-links { display: flex; align-items: center; gap: 28px; }
+    .nav-links a { font-size: 15px; font-weight: 500; color: var(--text-body); text-decoration: none; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--accent-cyan); }
+    .nav-cta {
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-cyan-hover)); color: #fff !important; padding: 10px 22px;
+      border-radius: 6px; font-weight: 600; font-size: 15px;
+      box-shadow: 0 4px 16px var(--accent-cyan-glow);
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(14, 165, 233, 0.4); }
+    .nav-mobile-toggle { display: none; background: none; border: none; font-size: 26px; cursor: pointer; color: var(--text-heading); }
+
+    /* Hero */
+    .hero {
+      padding: 160px 0 90px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(16, 185, 129, 0.12); color: var(--accent-emerald);
+      padding: 8px 20px; border-radius: 30px; font-size: 15px; font-weight: 600;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      margin-bottom: 28px;
+    }
+    .hero h1 {
+      font-size: 56px; font-weight: 800; line-height: 1.12;
+      letter-spacing: -1.2px; color: var(--text-heading);
+      max-width: 960px; margin: 0 auto 24px;
+    }
+    .hero h1 em {
+      font-style: normal;
+      background: linear-gradient(135deg, #38BDF8 0%, #10B981 50%, #A855F7 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .hero-sub {
+      font-size: 21px; font-weight: 300; line-height: 1.6;
+      color: var(--text-body); max-width: 760px; margin: 0 auto 42px;
+    }
+    .hero-actions { display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap; }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-cyan-hover)); color: #fff; padding: 16px 34px;
+      border-radius: 6px; border: none; font-size: 18px; font-weight: 600;
+      cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 10px;
+      box-shadow: 0 4px 20px var(--accent-cyan-glow);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 28px rgba(14, 165, 233, 0.5); }
+    .btn-secondary {
+      background: rgba(17, 24, 39, 0.6); color: var(--text-heading); padding: 16px 34px;
+      border-radius: 6px; border: 1.5px solid var(--border); font-size: 18px; font-weight: 500;
+      cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 10px;
+      backdrop-filter: blur(10px);
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .btn-secondary:hover { border-color: var(--accent-cyan); background: rgba(14, 165, 233, 0.08); }
+    
+    .hero-stats {
+      display: flex; justify-content: center; gap: 32px; margin-top: 64px;
+      flex-wrap: wrap;
+    }
+    .hero-stat {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px;
+      padding: 20px 30px; min-width: 210px; text-align: center;
+      backdrop-filter: blur(12px); box-shadow: var(--shadow-card);
+      transition: transform 0.3s, border-color 0.3s;
+    }
+    .hero-stat:hover { transform: translateY(-4px); border-color: var(--accent-cyan); box-shadow: var(--shadow-glow); }
+    .hero-stat-num { font-size: 38px; font-weight: 800; color: var(--text-heading); }
+    .hero-stat-accent { color: var(--accent-cyan); }
+    .hero-stat-label { font-size: 15px; color: var(--text-muted); margin-top: 4px; font-weight: 500; }
+
+    /* Sections */
+    section { padding: 96px 0; position: relative; }
+    .section-label {
+      font-size: 14px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase;
+      color: var(--accent-cyan); margin-bottom: 16px; display: flex; align-items: center; gap: 8px;
+    }
+    .section-title {
+      font-size: 48px; font-weight: 800; line-height: 1.15;
+      letter-spacing: -1px; color: var(--text-heading); margin-bottom: 20px;
+    }
+    .section-sub {
+      font-size: 19px; font-weight: 300; line-height: 1.6;
+      color: var(--text-body); max-width: 680px; margin-bottom: 56px;
+    }
+    .section-sub.centered { text-align: center; margin-left: auto; margin-right: auto; }
+    .section-title.centered { text-align: center; }
+
+    /* Pain Points */
+    .pain-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; margin-bottom: 40px; }
+    .pain-card {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px;
+      padding: 36px; backdrop-filter: blur(12px);
+      box-shadow: var(--shadow-card); transition: all 0.3s;
+    }
+    .pain-card:hover { transform: translateY(-4px); border-color: var(--border-glow); box-shadow: var(--shadow-glow); }
+    .pain-card-icon { font-size: 38px; margin-bottom: 16px; }
+    .pain-card h3 { font-size: 23px; font-weight: 700; color: var(--text-heading); margin-bottom: 12px; }
+    .pain-card p { font-size: 17px; font-weight: 300; color: var(--text-body); }
+    .pain-flip { text-align: center; margin-top: 20px; }
+    .pain-flip-pill {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: linear-gradient(135deg, rgba(14, 165, 233, 0.15), rgba(16, 185, 129, 0.15));
+      border: 1px solid var(--accent-cyan); color: #fff; padding: 16px 32px;
+      border-radius: 40px; font-size: 18px; font-weight: 700;
+      box-shadow: 0 0 20px var(--accent-cyan-glow);
+    }
+
+    /* Scare Block */
+    .scare-block {
+      background: linear-gradient(135deg, rgba(239, 68, 68, 0.15) 0%, rgba(17, 24, 39, 0.9) 100%);
+      border: 1.5px solid rgba(239, 68, 68, 0.4);
+      border-left: 6px solid #EF4444; border-radius: 12px;
+      padding: 36px 40px; box-shadow: 0 0 30px rgba(239, 68, 68, 0.12);
+      text-align: center; backdrop-filter: blur(12px);
+    }
+    .scare-text {
+      font-size: 20px; font-weight: 400; line-height: 1.65;
+      font-style: italic; color: #FCA5A5; max-width: 820px; margin: 0 auto;
+    }
+
+    /* Takeaways */
+    .takeaway-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+    .takeaway-card {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px;
+      padding: 30px 24px; text-align: center; backdrop-filter: blur(12px);
+      box-shadow: var(--shadow-card); transition: all 0.3s;
+    }
+    .takeaway-card:hover { transform: translateY(-4px); border-color: var(--accent-cyan); box-shadow: var(--shadow-glow); }
+    .takeaway-icon { font-size: 42px; margin-bottom: 14px; }
+    .takeaway-card h4 { font-size: 20px; font-weight: 700; color: var(--text-heading); margin-bottom: 8px; }
+    .takeaway-card p { font-size: 15.5px; font-weight: 300; color: var(--text-body); }
+
+    /* Demo Examples */
+    .demo-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 26px; }
+    .demo-card {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; overflow: hidden;
+      box-shadow: var(--shadow-card); backdrop-filter: blur(12px);
+      transition: all 0.3s; display: flex; flex-direction: column;
+    }
+    .demo-card:hover { transform: translateY(-4px); border-color: var(--accent-cyan); box-shadow: var(--shadow-glow); }
+    .demo-card-header { padding: 28px 28px 0; }
+    .demo-card-badge {
+      display: inline-block; font-size: 13px; font-weight: 700;
+      background: rgba(14, 165, 233, 0.15); color: var(--accent-cyan);
+      padding: 4px 12px; border-radius: 4px; margin-bottom: 14px;
+      border: 1px solid rgba(14, 165, 233, 0.3);
+    }
+    .demo-card h3 { font-size: 23px; font-weight: 700; color: var(--text-heading); margin-bottom: 12px; }
+    .demo-card-body { padding: 16px 28px 26px; display: flex; flex-direction: column; flex: 1; }
+    .demo-card-body p { font-size: 16.5px; font-weight: 300; color: var(--text-body); line-height: 1.6; margin-bottom: 16px; flex: 1; }
+    .demo-before { font-size: 14.5px; color: #94A3B8; margin-bottom: 6px; }
+    .demo-before strong { color: #EF4444; }
+    .demo-after { font-size: 14.5px; color: #94A3B8; }
+    .demo-after strong { color: #10B981; }
+    .demo-card-footer { padding: 0 28px 26px; display: flex; flex-wrap: wrap; gap: 6px; }
+    .demo-tag {
+      font-size: 13px; font-weight: 600; background: rgba(16, 185, 129, 0.12); color: var(--accent-emerald);
+      padding: 4px 12px; border-radius: 4px; border: 1px solid rgba(16, 185, 129, 0.2);
+    }
+
+    /* Modules */
+    .module-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+    .module-card {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px;
+      padding: 36px; backdrop-filter: blur(12px); box-shadow: var(--shadow-card);
+      transition: all 0.3s;
+    }
+    .module-card:hover { transform: translateY(-4px); border-color: var(--accent-cyan); box-shadow: var(--shadow-glow); }
+    .module-num {
+      font-size: 14px; font-weight: 800; color: var(--accent-cyan); letter-spacing: 1px;
+      text-transform: uppercase; margin-bottom: 10px;
+    }
+    .module-card h3 { font-size: 23px; font-weight: 700; color: var(--text-heading); margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+    .module-card ul { list-style: none; }
+    .module-card li {
+      font-size: 16.5px; font-weight: 300; color: var(--text-body);
+      padding: 7px 0; padding-left: 24px; position: relative; line-height: 1.55;
+    }
+    .module-card li::before { content: '⚡'; position: absolute; left: 0; color: var(--accent-cyan); font-size: 14px; }
+
+    /* Venue */
+    .venue-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; }
+    .venue-card-wrap-full { grid-column: 1 / -1; display: flex; justify-content: center; }
+    .venue-card-wrap-full .venue-card { max-width: 380px; width: 100%; }
+    .venue-card {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px;
+      padding: 30px 26px; text-align: center; backdrop-filter: blur(12px);
+      box-shadow: var(--shadow-card); transition: all 0.3s;
+    }
+    .venue-card:hover { transform: translateY(-4px); border-color: var(--accent-cyan); box-shadow: var(--shadow-glow); }
+    .venue-card h4 { font-size: 20px; font-weight: 700; color: var(--text-heading); margin-bottom: 8px; }
+    .venue-card p { font-size: 16px; font-weight: 300; color: var(--text-body); }
+    .venue-card .rating { font-size: 15px; color: var(--accent-emerald); margin-top: 10px; font-weight: 600; }
+
+    /* Pricing */
+    .pricing-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 26px; }
+    .pricing-card {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 18px;
+      padding: 40px 32px; text-align: center; backdrop-filter: blur(16px);
+      box-shadow: var(--shadow-card); transition: all 0.3s; position: relative;
+      display: flex; flex-direction: column;
+    }
+    .pricing-card.featured {
+      border-color: var(--accent-cyan); transform: scale(1.04);
+      box-shadow: 0 0 35px rgba(14, 165, 233, 0.3); background: rgba(17, 24, 39, 0.9);
+    }
+    .pricing-popular {
+      position: absolute; top: -15px; left: 50%; transform: translateX(-50%);
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-cyan-hover)); color: #fff;
+      padding: 6px 20px; border-radius: 20px; font-size: 13px; font-weight: 800;
+      letter-spacing: 0.5px; box-shadow: 0 0 15px var(--accent-cyan-glow);
+    }
+    .pricing-card h3 { font-size: 24px; font-weight: 700; color: var(--text-heading); margin-bottom: 6px; display: flex; align-items: center; justify-content: center; gap: 8px; }
+    .pricing-card .pricing-sub { font-size: 16px; color: var(--text-muted); margin-bottom: 20px; }
+    .pricing-price { font-size: 46px; font-weight: 800; color: var(--text-heading); }
+    .pricing-card .pricing-desc { font-size: 16px; color: var(--text-muted); margin: 12px 0 24px; }
+    .pricing-card ul { list-style: none; text-align: left; margin-bottom: 30px; flex-grow: 1; }
+    .pricing-card li { font-size: 16px; font-weight: 300; color: var(--text-body); padding: 7px 0; padding-left: 24px; position: relative; }
+    .pricing-card li::before { content: '✓'; position: absolute; left: 0; color: var(--accent-emerald); font-weight: 800; }
+    .pricing-cta {
+      display: block; width: 100%; text-align: center;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-cyan-hover)); color: #fff; padding: 14px 22px;
+      border-radius: 6px; border: none; font-size: 16.5px; font-weight: 700;
+      cursor: pointer; text-decoration: none; box-shadow: 0 0 15px var(--accent-cyan-glow);
+      transition: all 0.2s;
+    }
+    .pricing-cta:hover { transform: translateY(-2px); box-shadow: 0 0 25px rgba(14, 165, 233, 0.5); }
+    .pricing-cta.ghost {
+      background: transparent; color: var(--accent-cyan); border: 1.5px solid var(--accent-cyan);
+      box-shadow: none;
+    }
+    .pricing-cta.ghost:hover { background: rgba(14, 165, 233, 0.1); box-shadow: 0 0 15px var(--accent-cyan-glow); }
+    .pricing-note { font-size: 15px; color: var(--text-muted); text-align: center; margin-top: 32px; font-weight: 300; max-width: 700px; margin-left: auto; margin-right: auto; }
+
+    /* Mentor Section */
+    .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+    .skills-cat {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px;
+      padding: 32px; backdrop-filter: blur(12px); box-shadow: var(--shadow-card);
+    }
+    .skills-cat h3 { font-size: 20px; font-weight: 700; color: var(--text-heading); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+    .skills-cat ul { list-style: none; }
+    .skills-cat li { font-size: 16px; font-weight: 300; color: var(--text-body); padding: 7px 0; padding-left: 20px; position: relative; }
+    .skills-cat li::before { content: '▸'; position: absolute; left: 0; color: var(--accent-cyan); }
+    .skills-cat li strong { color: var(--text-heading); font-weight: 600; }
+    .skills-cat li em { color: var(--accent-emerald); font-style: normal; }
+    .skills-meta { text-align: center; margin-top: 48px; font-size: 16px; color: var(--text-muted); font-weight: 300; }
+
+    /* FAQ */
+    .faq-grid { max-width: 820px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+    .faq-item {
+      border: 1px solid var(--border); border-radius: 10px; overflow: hidden;
+      background: var(--bg-card); backdrop-filter: blur(12px); box-shadow: var(--shadow-card);
+    }
+    .faq-q {
+      padding: 22px 28px; font-size: 18.5px; font-weight: 600; color: var(--text-heading);
+      cursor: pointer; display: flex; justify-content: space-between; align-items: center;
+      background: transparent; transition: background 0.2s; border: none; width: 100%; text-align: left;
+    }
+    .faq-q:hover { background: rgba(14, 165, 233, 0.08); }
+    .faq-q .toggle { font-size: 24px; color: var(--accent-cyan); transition: transform 0.3s; }
+    .faq-q.active .toggle { transform: rotate(45deg); }
+    .faq-a {
+      padding: 0 28px; max-height: 0; overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.35s ease;
+    }
+    .faq-a.open { padding: 0 28px 24px; max-height: 400px; }
+    .faq-a p { font-size: 17px; font-weight: 300; color: var(--text-body); line-height: 1.6; }
+
+    /* Final CTA */
+    .cta-final {
+      text-align: center; padding: 100px 0;
+      background: radial-gradient(circle at 50% 50%, rgba(14, 165, 233, 0.12) 0%, transparent 70%);
+      border-top: 1px solid var(--border);
+    }
+    .cta-final h2 { font-size: 48px; font-weight: 800; color: var(--text-heading); margin-bottom: 16px; }
+    .cta-final p { font-size: 20px; font-weight: 300; color: var(--text-body); margin-bottom: 36px; }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border); padding: 40px 0;
+      text-align: center; font-size: 15px; font-weight: 300; color: var(--text-muted);
+    }
+
+    /* Video Feature Section */
+    .video-feature {
+      padding: 80px 0;
+    }
+    .video-feature .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .video-thumbnail {
+      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-card);
+      transition: all 0.3s;
+      display: block;
+    }
+    .video-thumbnail:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent-cyan);
+      box-shadow: var(--shadow-glow);
+    }
+    .video-thumbnail img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .video-play-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0,0,0,0.35);
+      transition: background 0.3s;
+    }
+    .video-thumbnail:hover .video-play-overlay {
+      background: rgba(0,0,0,0.5);
+    }
+    .video-play-btn {
+      width: 72px;
+      height: 72px;
+      background: rgba(14, 165, 233, 0.9);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      color: #fff;
+      box-shadow: 0 0 24px var(--accent-cyan-glow);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .video-thumbnail:hover .video-play-btn {
+      transform: scale(1.1);
+      box-shadow: 0 0 40px var(--accent-cyan-glow);
+    }
+    .video-text h3 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text-heading);
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+    .video-text p {
+      font-size: 19px;
+      font-weight: 300;
+      color: var(--text-body);
+      line-height: 1.6;
+    }
+    .video-source {
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--accent-cyan);
+      text-decoration: none;
+      border: 1px solid var(--accent-cyan);
+      padding: 8px 18px;
+      border-radius: 6px;
+      transition: all 0.3s;
+    }
+    .video-source:hover {
+      background: rgba(14, 165, 233, 0.1);
+      box-shadow: 0 0 15px var(--accent-cyan-glow);
+    }
+
+    /* Responsive */
+    @media (max-width: 960px) {
+      .hero h1 { font-size: 42px; }
+      .pain-grid, .module-grid, .skills-grid { grid-template-columns: 1fr; }
+      .takeaway-grid { grid-template-columns: 1fr 1fr; }
+      .demo-grid, .venue-grid, .pricing-grid { grid-template-columns: 1fr; }
+      .video-feature .container { grid-template-columns: 1fr; }
+      .video-text { text-align: center; }
+      .pricing-card.featured { transform: none; }
+      .nav-links { display: none; }
+      .nav-mobile-toggle { display: block; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <img class="ninja-icon" src="https://www.pngkey.com/png/detail/902-9020252_igo-ninja-icon-ninja-free.png" alt="Ninja">
+      Agentic AI Ninja Bureau
+    </a>
+    <div class="nav-links">
+      <a href="#pain">Pain Points</a>
+      <a href="#takeaways">What You Get</a>
+      <a href="#examples">Examples</a>
+      <a href="#modules">Curriculum</a>
+      <a href="#venue">Venue</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#skills">Mentor</a>
+      <a href="https://www.picktime.com/e3d28b74-4982-434d-8984-5e44c07fb13b" class="nav-cta">
+        <img class="ninja-icon" src="https://www.pngkey.com/png/detail/14-149506_free-png-ninja-png-images-transparent-ninja-png.png" alt="Ninja"> Reserve My Seat
+      </a>
+    </div>
+    <button class="nav-mobile-toggle" onclick="toggleMobileNav()">☰</button>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-badge">
+      <img class="ninja-icon" src="https://www.pngkey.com/png/detail/902-9020252_igo-ninja-icon-ninja-free.png" alt="Ninja">
+      Beginners Welcome · Zero Coding Needed
+    </div>
+    <h1>I help you set up AI Agent Teams That Do Your <em>Light & Heavy Lifting</em> 24/7</h1>
+    <p class="hero-sub">
+      So you can spend more time with your friends and family. In just 4 hours, you'll build your own always-on AI Agent Team that you can manage and control entirely through Telegram and WhatsApp 24/7 — all for under S$25/month to run.
+    </p>
+    <div class="hero-actions">
+      <a href="#pricing" class="btn-primary">
+        <img class="ninja-icon" src="https://www.pngkey.com/png/detail/14-142705_ninja-png-image-ninja-png.png" alt="Ninja"> Build Your AI Agent Team →
+      </a>
+      <a href="#examples" class="btn-secondary">See What They'll Do →</a>
+    </div>
+    
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-num">4 <span class="hero-stat-accent">Hours</span></div>
+        <div class="hero-stat-label">One afternoon. Done.</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">4-6 <span class="hero-stat-accent">pax</span></div>
+        <div class="hero-stat-label">Ultra-small group</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">S$100</div>
+        <div class="hero-stat-label">All materials included</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num">&lt;S$25 <span class="hero-stat-accent">/mo</span></div>
+        <div class="hero-stat-label">Running cost</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CNA News Video Feature -->
+<section class="video-feature">
+  <div class="container">
+    <a href="https://www.channelnewsasia.com/watch/agentic-ai-more-singapore-workers-managing-bots-firms-ramp-up-ai-uses-6381451" target="_blank" rel="noopener noreferrer" class="video-thumbnail">
+      <img src="https://dam.mediacorp.sg/image/upload/s--mscSMkeD--/c_fill,g_auto,h_676,w_1200/f_auto,q_auto/v1/mediacorp/cna/image/2026/09/13/1789309937-image.jpg?itok=ZchR2BX9" alt="Agentic AI: More Singapore workers managing bots as firms ramp up AI uses" loading="lazy">
+      <div class="video-play-overlay">
+        <div class="video-play-btn">▶</div>
+      </div>
+    </a>
+    <div class="video-text">
+      <h3>Agentic AI: More Singapore workers managing bots as firms ramp up AI uses</h3>
+      <p>Gain the Competitive Edge Employers Are Looking For: Turn your AI Agent Team Mastery into Your Ultimate Career Advantage.</p>
+      <a href="https://www.channelnewsasia.com/watch/agentic-ai-more-singapore-workers-managing-bots-firms-ramp-up-ai-uses-6381451" target="_blank" rel="noopener noreferrer" class="video-source">Watch on CNA ↗</a>
+    </div>
+  </div>
+</section>
+
+<!-- Pain Points -->
+<section id="pain">
+  <div class="container">
+    <div class="section-label">
+      <img class="ninja-icon" src="https://www.pngkey.com/png/detail/902-9020252_igo-ninja-icon-ninja-free.png" alt="Ninja"> Sound Familiar?
+    </div>
+    <h2 class="section-title">Your Time Is Too Valuable<br>for Repetitive Work</h2>
+    <p class="section-sub">You're losing 2+ hours every day to email follow-ups, invoice chasing, and scheduling — while your AI Agent Team could handle it all in minutes.</p>
+    
+    <div class="pain-grid">
+      <div class="pain-card">
+        <div class="pain-card-icon">⏰</div>
+        <h3>"I spend hours on emails and follow-ups"</h3>
+        <p>Your inbox is a leaky bucket. You're drafting responses, chasing invoices, and scheduling meetings — every single day. That's hours you'll never get back.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-card-icon">🤯</div>
+        <h3>"I'm not technical — I just want it to work"</h3>
+        <p>You've heard about AI assistants, but every course is full of jargon, coding, or requires a CS degree. You need a practical, no-nonsense path that actually works.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-card-icon">💸</div>
+        <h3>"I'm paying for tools I barely use"</h3>
+        <p>SaaS subscriptions are eating your margins. Most tools are locked in, overpriced, and don't talk to each other. You want something open, flexible, and cheap.</p>
+      </div>
+      <div class="pain-card">
+        <div class="pain-card-icon">😴</div>
+        <h3>"If I don't do it, nobody does it"</h3>
+        <p>Your business runs on you. Every reply, every report, every lead follow-up — you're the bottleneck. What if you had a 24/7 AI Agent Team?</p>
+      </div>
+    </div>
+
+    <div class="pain-flip">
+      <div class="pain-flip-pill">
+        <img class="ninja-icon" src="https://www.pngkey.com/png/detail/902-9020252_igo-ninja-icon-ninja-free.png" alt="Ninja">
+        Now imagine your own team of AI assistants handling all of this — so you can focus on your family and friends
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Scare Point -->
+<section style="padding: 0 0 60px;">
+  <div class="container">
+    <div class="scare-block">
+      <p class="scare-text"><em>While you're sweating over emails and searching for cheaper freight at 10 pm, your competitor just approved 8 shipments from his family dinner table. His 24/7 AI Agent Team is running the race for him. How much longer can you afford to lag behind?</em></p>
+    </div>
+  </div>
+</section>
+
+<!-- Takeaways -->
+<section id="takeaways">
+  <div class="container">
+    <div class="section-label">
+      <img class="ninja-icon" src="https://www.pngkey.com/png/detail/902-9020252_igo-ninja-icon-ninja-free.png" alt="Ninja"> You Walk Away With
+    </div>
+    <h2 class="section-title">A Fully Working AI Agent Team<br>in Your Pocket</h2>
+    <p class="section-sub">This isn't a certificate course. You leave with a live, running system — and everything you need to expand it.</p>
+    
+    <div class="takeaway-grid">
+      <div class="takeaway-card">
+        <div class="takeaway-icon">🤖</div>
+        <h4>24/7 AI Agent Team</h4>
+        <p>Connected to Telegram & WhatsApp — ready to take commands while you work, drive, or sleep</p>
+      </div>
+      <div class="takeaway-card">
+        <div class="takeaway-icon">🛡️</div>
+        <h4>Personal CISO</h4>
+        <p>Safety guardrails, human-in-the-loop approvals, and security-first architecture built in</p>
+      </div>
+      <div class="takeaway-card">
+        <div class="takeaway-icon">✍️</div>
+        <h4>Copy Assistant</h4>
+        <p>Your own digital copywriter that drafts social posts, emails, and ad copy on demand</p>
+      </div>
+      <div class="takeaway-card">
+        <div class="takeaway-icon">🔍</div>
+        <h4>Researcher</h4>
+        <p>Auto-research competitors, leads, and topics — delivered to your phone daily</p>
+      </div>
+      <div class="takeaway-card">
+        <div class="takeaway-icon">📧</div>
+        <h4>Gmail Assistant</h4>
+        <p>Triages, drafts, and files emails so you never miss a client message</p>
+      </div>
+      <div class="takeaway-card">
+        <div class="takeaway-icon">🎯</div>
+        <h4>2 Demo Projects</h4>
+        <p>Ready-to-run templates you can remix for your own business needs</p>
+      </div>
+      <div class="takeaway-card">
+        <div class="takeaway-icon">🎨</div>
+        <h4>Fresh Box of Crayons</h4>
+        <p>A blank canvas to build whatever YOU imagine — end-to-end ownership</p>
+      </div>
+      <div class="takeaway-card">
+        <div class="takeaway-icon">😊</div>
+        <h4>A Big Smile</h4>
+        <p>Because you finally stopped drowning in dull tasks and started creating</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 Solid Examples -->
+<section id="examples">
+  <div class="container">
+    <div class="section-label">
+      <img class="ninja-icon" src="https://www.pngkey.com/png/detail/902-9020252_igo-ninja-icon-ninja-free.png" alt="Ninja"> Real Examples. Real Results.
+    </div>
+    <h2 class="section-title">Three Things Your AI Agent Team<br>Can Do by Tomorrow</h2>
+    <p class="section-sub">By tomorrow your AI Agent Team can: (1) auto-find the cheapest supplier rates, (2) triage your inbox in 10 minutes, and (3) research competitors daily — all on autopilot.</p>
+    
+    <div class="demo-grid">
+      <div class="demo-card">
+        <div class="demo-card-header">
+          <div class="demo-card-badge">⚡ 1. The Automated Secret Shopper</div>
+          <h3>Find the Cheapest Supplier Rates on Autopilot</h3>
+        </div>
+        <div class="demo-card-body">
+          <p>Raw material and shipping costs change constantly. Tell your AI Agent Team once: "Every Sunday at midnight, check my supplier sites, find the absolute cheapest freight rates, and update my list." Your AI Agent Team wakes up at midnight, navigates the portals, grabs the best prices, and updates your inventory list — automatically.</p>
+          <div class="demo-before"><strong>😫 Before:</strong> Weekends wasted manually opening 5 supplier websites to compare prices</div>
+          <div class="demo-after"><strong>🥷 After:</strong> You always buy at the lowest price — zero hours spent, margin protected.</div>
+        </div>
+        <div class="demo-card-footer">
+          <span class="demo-tag">Suppliers</span>
+          <span class="demo-tag">Price Monitoring</span>
+          <span class="demo-tag">Cost Savings</span>
+        </div>
+      </div>
+
+      <div class="demo-card">
+        <div class="demo-card-header">
+          <div class="demo-card-badge">⚡ 2. The Inbox Zero Operator</div>
+          <h3>Gmail Assistant That Actually Helps</h3>
+        </div>
+        <div class="demo-card-body">
+          <p>Your AI Agent Team monitors your inbox, triages emails by priority, drafts professional replies, files invoices into Sheets, and flags urgent messages to your phone — via WhatsApp voice command.</p>
+          <div class="demo-before"><strong>😫 Before:</strong> 90 minutes drowning in inbox chaos every morning</div>
+          <div class="demo-after"><strong>🥷 After:</strong> Inbox processed in 10 min. Clients get faster replies. You get peace.</div>
+        </div>
+        <div class="demo-card-footer">
+          <span class="demo-tag">Email</span>
+          <span class="demo-tag">Productivity</span>
+          <span class="demo-tag">Voice Commands</span>
+        </div>
+      </div>
+
+      <div class="demo-card">
+        <div class="demo-card-header">
+          <div class="demo-card-badge">⚡ 3. The Research Ninja</div>
+          <h3>Daily Competitor Briefing to Your Phone</h3>
+        </div>
+        <div class="demo-card-body">
+          <p>Your AI Agent Team researches competitors, news, and trends every morning, compiles a 2-page briefing, and delivers it to your Telegram — complete with actionable insights. No more doom-scrolling for intel.</p>
+          <div class="demo-before"><strong>😫 Before:</strong> Hours of manual research you never have time to do</div>
+          <div class="demo-after"><strong>🥷 After:</strong> A personalised daily brief lands on your phone at 7am. Ready to act.</div>
+        </div>
+        <div class="demo-card-footer">
+          <span class="demo-tag">Research</span>
+          <span class="demo-tag">Competitive Intel</span>
+          <span class="demo-tag">Daily Briefing</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Model Flexibility Highlight -->
+<section style="padding: 0 0 60px;">
+  <div class="container">
+    <div style="background: linear-gradient(135deg, rgba(14, 165, 233, 0.08) 0%, rgba(17, 24, 39, 0.9) 100%); border: 1.5px solid rgba(14, 165, 233, 0.35); border-left: 6px solid #0EA5E9; border-radius: 12px; padding: 40px 44px; text-align: center; backdrop-filter: blur(12px); box-shadow: 0 0 25px rgba(14, 165, 233, 0.1);">
+      <div style="font-size: 22px; font-weight: 300; line-height: 1.65; color: var(--text-body); max-width: 860px; margin: 0 auto;">
+        Most platforms force you to choose either ChatGPT or Claude. With our open setup, your assistants can swap brains instantly. Need text? Use the best writing model. Need a marketing image or a video clip? Your AI handles it automatically without making you sign up for 5 different websites.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Social Proof Strip -->
+<section style="padding: 0 0 60px;">
+  <div class="container">
+    <div style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(17, 24, 39, 0.9) 100%); border: 1.5px solid rgba(16, 185, 129, 0.35); border-left: 6px solid #10B981; border-radius: 12px; padding: 36px 40px; text-align: center; backdrop-filter: blur(12px); box-shadow: 0 0 30px rgba(16, 185, 129, 0.12);">
+      <div style="display: flex; justify-content: center; gap: 60px; flex-wrap: wrap; text-align: center;">
+        <div>
+          <div style="font-size: 38px; font-weight: 800; color: #10B981;">76%</div>
+          <div style="font-size: 17px; color: var(--text-body); font-weight: 300; line-height: 1.5;">of participants had their first AI Agent Team<br>running within <strong style="color: var(--text-heading);">45 minutes</strong></div>
+        </div>
+        <div style="border-left: 1px solid rgba(16, 185, 129, 0.25); padding-left: 60px;">
+          <div style="font-size: 32px; font-weight: 800; color: #10B981; letter-spacing: 2px;">★★★★★</div>
+          <div style="font-size: 17px; color: var(--text-body); font-weight: 300; line-height: 1.5;">Rated 5-star<br>by past attendees</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Curriculum -->
+<section id="modules">
+  <div class="container">
+    <div class="section-label">
+      <img class="ninja-icon" src="https://www.pngkey.com/png/detail/902-9020252_igo-ninja-icon-ninja-free.png" alt="Ninja"> Curriculum
+    </div>
+    <h2 class="section-title">4 Modules. 4 Hours.<br>From Zero to Your First AI Agent Team.</h2>
+    <p class="section-sub">Every module is hands-on. You're not watching slides — you're building, testing, and deploying your own AI Agent Team in real time.</p>
+    
+    <div class="module-grid">
+      <div class="module-card">
+        <div class="module-num">Module 1 · 45 min</div>
+        <h3><img class="ninja-icon" src="https://www.pngkey.com/png/detail/902-9020252_igo-ninja-icon-ninja-free.png" alt="Ninja"> Demystifying AI Agent Teams</h3>
+        <ul>
+          <li>What makes an AI agent a "ninja" — explained in plain English</li>
+          <li>Why open-source beats locked-in SaaS tools (S$25 vs S$100s/mo)</li>
+          <li>Spotting automation gold in your own daily tasks</li>
+        </ul>
+      </div>
+      <div class="module-card">
+        <div class="module-num">Module 2 · 75 min</div>
+        <h3>🛠️ Setting Up Your First AI Agent Team</h3>
+        <ul>
+          <li>Toolkit setup — zero coding, visual drag-and-drop builders</li>
+          <li>Defining safe boundaries, goals, and guardrails</li>
+          <li>First live build: connect to email or messaging and run a test</li>
+        </ul>
+      </div>
+      <div class="module-card">
+        <div class="module-num">Module 3 · 60 min</div>
+        <h3>🔗 Building Multi-Step Workflows</h3>
+        <ul>
+          <li>Visual workflow mapping — decisions, triggers, and actions</li>
+          <li>Connecting forms, spreadsheets, and messaging apps</li>
+          <li>Human approval checkpoints for critical actions</li>
+        </ul>
+      </div>
+      <div class="module-card">
+        <div class="module-num">Module 4 · 60 min</div>
+        <h3>🚀 Launching Your AI Agent Team</h3>
+        <ul>
+          <li>Low-cost hosting setups to keep everything under S$30/month</li>
+          <li>Monitoring, fixes, and cost management</li>
+          <li>Showcase your workflow, get personalized mentor feedback</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Venue -->
+<section id="venue">
+  <div class="container">
+    <div class="section-label">
+      <img class="ninja-icon" src="https://www.pngkey.com/png/detail/902-9020252_igo-ninja-icon-ninja-free.png" alt="Ninja"> Venue
+    </div>
+    <h2 class="section-title">Learn in Comfortable,<br>Premium Spaces</h2>
+    <p class="section-sub">Small groups mean premium coworking spaces. Pick the location that works for you.</p>
+    
+    <div class="venue-grid">
+      <div class="venue-card">
+        <h4>🏢 Ang Mo Kio Techplace II</h4>
+        <p>5008 Ang Mo Kio Ave 5, #04-09<br>Ideal for 4-6 pax groups</p>
+        <div class="rating">⭐ 4.98 · 41 reviews</div>
+      </div>
+      <div class="venue-card">
+        <h4>🏢 Storefriendly Paya Lebar</h4>
+        <p>107 Eunos Ave 3, #02-28<br>Ideal for 4-6 pax groups</p>
+        <div class="rating">⭐ 4.74 · 227 reviews</div>
+      </div>
+      <div class="venue-card">
+        <h4>🏢 The Executive Centre</h4>
+        <p>One Raffles Quay North Tower, #49<br>Premium option · 2-3 pax</p>
+        <div class="rating">⭐ 4.94 · 461 reviews</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section id="pricing">
+  <div class="container">
+    <div class="section-label">
+      <img class="ninja-icon" src="https://www.pngkey.com/png/detail/902-9020252_igo-ninja-icon-ninja-free.png" alt="Ninja"> Investment
+    </div>
+    <h2 class="section-title">Pricing That Makes<br>Sense for Real People</h2>
+    <p class="section-sub">Ultra-small groups mean you get 1-on-1 attention. No large lecture halls, no being ignored.</p>
+    
+    <div class="pricing-grid">
+      <div class="pricing-card featured">
+        <div class="pricing-popular">Most Popular</div>
+        <h3>
+          <img class="ninja-icon" src="https://www.pngkey.com/png/detail/902-9020252_igo-ninja-icon-ninja-free.png" alt="Ninja"> Small Group
+        </h3>
+        <div class="pricing-sub">2-3 pax</div>
+        <div class="pricing-price">S$120</div>
+        <div class="pricing-desc">Per person · Perfect for teams</div>
+        <ul>
+          <li>All 4 beginner modules</li>
+          <li>Your own AI Agent Team deployed</li>
+          <li>Post-training community access</li>
+          <li>Free follow-up Q&A session</li>
+        </ul>
+        <a href="https://www.picktime.com/e3d28b74-4982-434d-8984-5e44c07fb13b" class="pricing-cta">Book Online via Picktime →</a>
+        <a href="https://wa.me/6597428097?text=Hi!%20I'm%20interested%20in%20the%20Small%20Group%20($120)%20for%20Agentic%20AI%20Ninja%20Clinic" class="pricing-cta ghost" style="margin-top:10px;">or WhatsApp</a>
+      </div>
+
+      <div class="pricing-card">
+        <h3>
+          <img class="ninja-icon" src="https://www.pngkey.com/png/detail/902-9020252_igo-ninja-icon-ninja-free.png" alt="Ninja"> Full Group
+        </h3>
+        <div class="pricing-sub">4-6 pax</div>
+        <div class="pricing-price">S$100</div>
+        <div class="pricing-desc">Per person · Best value</div>
+        <ul>
+          <li>All 4 beginner modules</li>
+          <li>Your own AI Agent Team deployed</li>
+          <li>Post-training community access</li>
+          <li>Free follow-up Q&A session</li>
+          <li>AMK Techplace II or Storefriendly</li>
+        </ul>
+        <a href="https://wa.me/6597428097?text=Hi!%20I'm%20interested%20in%20the%20Full%20Group%20($100)%20for%20Agentic%20AI%20Ninja%20Clinic" class="pricing-cta ghost">Book Full Group →</a>
+      </div>
+
+      <div class="pricing-card">
+        <h3>
+          <img class="ninja-icon" src="https://www.pngkey.com/png/detail/902-9020252_igo-ninja-icon-ninja-free.png" alt="Ninja"> Founding Member
+        </h3>
+        <div class="pricing-sub">Be one of the first 3 small classes to join us</div>
+        <div class="pricing-price" style="font-size:36px; line-height:1.2;">
+          S$20 OFF<br>
+          <span style="font-size:18px; font-weight:400; color:var(--text-muted);">your registration</span>
+        </div>
+        <div class="pricing-desc">Exclusive Founding Member Offer</div>
+        <ul>
+          <li>All 4 beginner modules</li>
+          <li>Your own AI Agent Team deployed</li>
+          <li>Post-training community access</li>
+          <li>Free follow-up Q&A session</li>
+          <li>We feature a quick session photo on our new website</li>
+          <li>Immediate S$20 off your registration</li>
+        </ul>
+        <a href="https://wa.me/6597428097?text=Hi!%20I%20want%20to%20be%20a%20Founding%20Member%20of%20Agentic%20AI%20Ninja%20Clinic!" class="pricing-cta">Be a Founding Member →</a>
+      </div>
+    </div>
+    
+    <p class="pricing-note">
+      <img class="ninja-icon" src="https://www.pngkey.com/png/detail/902-9020252_igo-ninja-icon-ninja-free.png" alt="Ninja">
+      All prices in SGD. Running cost of your AI agent is under S$25/month — no hidden fees, no lock-in contracts. You own everything.
+    </p>
+  </div>
+</section>
+
+<!-- Mentor Section -->
+<section id="skills">
+  <div class="container">
+    <div class="section-label">
+      <img class="ninja-icon" src="https://www.pngkey.com/png/detail/902-9020252_igo-ninja-icon-ninja-free.png" alt="Ninja"> Your Mentor
+    </div>
+    <h2 class="section-title">Built by Someone Who's<br>Done This at Enterprise Scale</h2>
+    <p class="section-sub">Your instructor has real AWS, IBM AI, and enterprise security experience — simplified so you don't need to be technical. From enterprise architecture to your first AI Agent Team.</p>
+    
+    <div class="skills-grid">
+      <div class="skills-cat">
+        <h3>☁️ Cloud Platforms & Infrastructure</h3>
+        <ul>
+          <li><strong>AWS</strong> — Scalable Cloud Architecture, S3 Infrastructure, RDS Management & High-Availability Proxies</li>
+          <li>Hybrid Cloud Deployment & Enterprise Storage Optimization</li>
+          <li>Financial Cloud Architecture Fundamentals <em>(SMU Certified)</em></li>
+        </ul>
+      </div>
+      <div class="skills-cat">
+        <h3>🔄 DevOps, Automation & CI/CD</h3>
+        <ul>
+          <li>CI/CD Pipeline Automation & Optimization <strong>(Jenkins)</strong> — Accelerating Release Cycles</li>
+          <li>Source Code Lifecycle & Release Management (Local Compilation, Versioning Strategy & Cache Optimization)</li>
+          <li>Multi-Environment Orchestration <strong>(DEV, UAT, PROD)</strong></li>
+        </ul>
+      </div>
+      <div class="skills-cat">
+        <h3>🛡️ Network, Security & Compliance</h3>
+        <ul>
+          <li>Proactive Network Security Architecture (Resource Whitelisting, Security Aliasing & Secure Proxy Gateways)</li>
+          <li>Rigorous Security Compliance & Due Diligence (PC-Code Auditing & Multi-Tier Approver Validation)</li>
+        </ul>
+      </div>
+      <div class="skills-cat">
+        <h3>🤖 Data Science, AI & Emerging Tech</h3>
+        <ul>
+          <li>Data-Driven Insights & Advanced Analytics <em>(Python for Data Science — IBM)</em></li>
+          <li>Enterprise AI Solutions & Business Transformation <em>(IBM)</em></li>
+          <li><strong>Applied Artificial Intelligence</strong> <em>(IBM Certified Practitioner)</em></li>
+          <li>Predictive Analytics & Complex Problem Solving <em>(IBM Data Science Practitioner)</em></li>
+          <li>Enterprise Cloud Computing Solutions <em>(IBM Certified Practitioner)</em></li>
+          <li>Human-Centered Product Strategy <em>(Enterprise Design Thinking Practitioner)</em></li>
+        </ul>
+      </div>
+    </div>
+    <div class="skills-meta">
+      <img class="ninja-icon" src="https://www.pngkey.com/png/detail/902-9020252_igo-ninja-icon-ninja-free.png" alt="Ninja">
+      From enterprise architecture to your first AI Agent Team — simplified, practical, and immediately useful.
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-label centered" style="justify-content: center;">
+      <img class="ninja-icon" src="https://www.pngkey.com/png/detail/902-9020252_igo-ninja-icon-ninja-free.png" alt="Ninja"> FAQ
+    </div>
+    <h2 class="section-title centered">Quick Answers</h2>
+    <p class="section-sub centered">Still wondering? Here's what most people ask.</p>
+    
+    <div class="faq-grid">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Do I need to know how to code? <span class="toggle">+</span></button>
+        <div class="faq-a"><p>Not at all! We focus on visual drag-and-drop builders, plain-language prompts, and open tools. If you can use ChatGPT, you can build an AI agent.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Will I actually build something? <span class="toggle">+</span></button>
+        <div class="faq-a"><p>Yes — you will build a fully functioning, multi-step automated assistant customized to your own actual work routine before you leave the room.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">What's the running cost after the clinic? <span class="toggle">+</span></button>
+        <div class="faq-a"><p>Under S$25/month. We use open-source platforms and pay-as-you-go LLMs — no expensive SaaS subscriptions. You own everything.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Is there vendor lock-in? <span class="toggle">+</span></button>
+        <div class="faq-a"><p>Zero. You retain 100% ownership of your workflows, scripts, and choice of language models. Nothing is locked in.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Can I use my company laptop? <span class="toggle">+</span></button>
+        <div class="faq-a"><p>A personal laptop is strongly recommended. Company firewalls sometimes block the tools we use.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">What happens after the clinic? <span class="toggle">+</span></button>
+        <div class="faq-a"><p>You get ongoing access to our Ninja Community alumni chat, free group Q&A sessions, and direct mentor access as you build new projects.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="cta-final">
+  <div class="container">
+    <h2>Ready to Build Your AI Agent Team?</h2>
+    <p>4 hours. Zero coding. A 24/7 AI Agent Team that works while you rest.</p>
+    <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+      <a href="https://www.picktime.com/e3d28b74-4982-434d-8984-5e44c07fb13b" class="btn-primary">
+        <img class="ninja-icon" src="https://www.pngkey.com/png/detail/33-333939_ninja-cartoon-png-clipart-free-stock-ninja-clipart.png" alt="Ninja"> Book Online Now →
+      </a>
+      <a href="https://wa.me/6597428097?text=Hi!%20I%20want%20to%20reserve%20my%20spot%20for%20the%20Agentic%20AI%20Ninja%20Clinic!" class="btn-secondary">or enquire via WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Agentic AI Ninja Clinic · Built with <img class="ninja-icon" src="https://www.pngkey.com/png/detail/902-9020252_igo-ninja-icon-ninja-free.png" alt="Ninja"> in Singapore · <a href="https://wa.me/6597428097" style="color:var(--accent-cyan);text-decoration:none;">WhatsApp</a> · <span style="font-size:14px;color:var(--text-muted);">Last updated: Sep 2026</span></p>
+  </div>
+</footer>
+
+<script>
+// FAQ Toggle
+function toggleFaq(el) {
+  el.classList.toggle('active');
+  const answer = el.nextElementSibling;
+  answer.classList.toggle('open');
+  el.querySelector('.toggle').textContent = el.classList.contains('active') ? '×' : '+';
+}
+
+// Mobile Nav Toggle
+function toggleMobileNav() {
+  const links = document.querySelector('.nav-links');
+  if (links.style.display === 'flex') {
+    links.style.display = 'none';
+  } else {
+    links.style.display = 'flex';
+    links.style.flexDirection = 'column';
+    links.style.position = 'absolute';
+    links.style.top = '72px';
+    links.style.left = '0';
+    links.style.right = '0';
+    links.style.background = 'rgba(11, 15, 23, 0.96)';
+    links.style.padding = '24px';
+    links.style.borderBottom = '1px solid var(--border)';
+  }
+}
+</script>
+
+</body>
+</html>
