@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Josephine Wong — Facilitator | Trainer | Coach | NLP Master Practitioner</title>
+<meta name="description" content="Josephine Wong — creating platforms for good ol' conversations to happen & unlocking individual potential. 15+ years in Marketing, E-commerce Strategy, Leadership Coaching and Facilitation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #FBF7F1;
+    --bg-deep: #F3ECE1;
+    --ink: #1E1B18;
+    --ink-soft: #5A534B;
+    --accent: #C2593C;
+    --accent-dark: #A34529;
+    --gold: #B8862F;
+    --line: #E4DACB;
+    --card: #FFFFFF;
+    --radius: 18px;
+    --max: 1140px;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+
+  /* ---------- NAV ---------- */
+  nav {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(251, 247, 241, .88);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-inner {
+    max-width: var(--max); margin: 0 auto; padding: 16px 24px;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  }
+  .brand {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 700; font-size: 1.1rem; letter-spacing: -.01em;
+    text-decoration: none; color: var(--ink);
+  }
+  .brand span { color: var(--accent); }
+  .nav-links { display: flex; align-items: center; gap: 28px; }
+  .nav-links a {
+    font-size: .92rem; font-weight: 500; color: var(--ink-soft);
+    text-decoration: none; transition: color .18s ease;
+  }
+  .nav-links a:hover { color: var(--accent); }
+  .nav-cta {
+    background: var(--ink); color: #fff !important;
+    padding: 10px 20px; border-radius: 999px; font-weight: 600 !important;
+    transition: transform .18s ease, background .18s ease;
+  }
+  .nav-cta:hover { background: var(--accent) !important; transform: translateY(-2px); }
+  .nav-toggle { display: none; background: none; border: 0; font-size: 1.5rem; cursor: pointer; color: var(--ink); }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    position: relative; overflow: hidden;
+    padding: 84px 0 72px;
+    background:
+      radial-gradient(900px 420px at 85% -10%, rgba(194, 89, 60, .14), transparent 60%),
+      radial-gradient(700px 380px at -10% 30%, rgba(184, 134, 47, .12), transparent 60%),
+      var(--bg);
+  }
+  .hero-grid {
+    display: grid; grid-template-columns: 1.35fr .9fr; gap: 56px; align-items: center;
+  }
+
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: .78rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 22px;
+  }
+  .eyebrow::before {
+    content: ''; width: 34px; height: 2px; background: var(--accent); display: inline-block;
+  }
+
+  h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: clamp(2.4rem, 5.2vw, 4rem);
+    line-height: 1.08; letter-spacing: -.02em; font-weight: 700;
+    margin-bottom: 20px;
+  }
+  h1 .name { display: block; color: var(--accent); }
+  h1 .roles { display: block; font-weight: 600; color: var(--ink); }
+  h1 .roles i { font-style: normal; color: var(--gold); padding: 0 4px; }
+
+  .tagline {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: clamp(1.1rem, 2vw, 1.35rem);
+    font-style: italic; font-weight: 400;
+    color: var(--ink-soft); max-width: 40ch; margin-bottom: 20px;
+  }
+
+  .lede { font-size: 1.03rem; color: var(--ink-soft); max-width: 56ch; margin-bottom: 28px; }
+
+  .badges { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 36px; }
+  .badge {
+    font-size: .82rem; font-weight: 600;
+    background: var(--card); border: 1px solid var(--line);
+    padding: 8px 16px; border-radius: 999px; color: var(--ink);
+    box-shadow: 0 1px 2px rgba(30, 27, 24, .05);
+    transition: border-color .18s ease, transform .18s ease;
+  }
+  .badge:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .badge b { color: var(--accent); font-weight: 700; }
+
+  .cta-row { display: flex; flex-wrap: wrap; gap: 14px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 9px;
+    font-size: .97rem; font-weight: 600; text-decoration: none;
+    padding: 15px 30px; border-radius: 999px; cursor: pointer;
+    border: 1px solid transparent; transition: all .2s ease;
+  }
+  .btn-primary { background: var(--accent); color: #fff; box-shadow: 0 8px 20px rgba(194, 89, 60, .3); }
+  .btn-primary:hover { background: var(--accent-dark); transform: translateY(-2px); box-shadow: 0 12px 26px rgba(194, 89, 60, .36); }
+  .btn-ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
+  .btn-ghost:hover { background: var(--ink); color: #fff; transform: translateY(-2px); }
+  .btn .arrow { transition: transform .2s ease; }
+  .btn:hover .arrow { transform: translateX(4px); }
+
+  /* portrait / monogram */
+  .portrait-col { display: flex; justify-content: center; }
+  .portrait {
+    position: relative; width: 100%; max-width: 340px; aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background: linear-gradient(145deg, var(--accent) 0%, var(--gold) 100%);
+    display: grid; place-items: center;
+    box-shadow: 0 30px 60px rgba(30, 27, 24, .22);
+  }
+  .portrait::after {
+    content: ''; position: absolute; inset: 14px;
+    border-radius: 50%; border: 2px dashed rgba(255, 255, 255, .55);
+    z-index: 2; pointer-events: none;
+  }
+  .portrait .photo {
+    position: absolute; top: 14px; left: 14px; right: 14px; bottom: 14px;
+    width: calc(100% - 28px); height: calc(100% - 28px);
+    border-radius: 50%; object-fit: cover; object-position: center 20%;
+    z-index: 1; background: var(--bg-deep);
+    box-shadow: inset 0 0 0 3px rgba(255, 255, 255, .35);
+  }
+  .monogram {
+    position: relative; z-index: 0;
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: clamp(4.5rem, 9vw, 6.5rem); font-weight: 700; color: #fff;
+    letter-spacing: -.03em;
+  }
+  .portrait-tag {
+    position: absolute; bottom: -14px; left: 50%; transform: translateX(-50%);
+    background: var(--ink); color: #fff; white-space: nowrap;
+    font-size: .76rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+    padding: 9px 18px; border-radius: 999px; z-index: 4;
+    box-shadow: 0 8px 18px rgba(30, 27, 24, .25);
+  }
+  .float-chip {
+    position: absolute; background: var(--card); border: 1px solid var(--line);
+    border-radius: 14px; padding: 10px 15px; font-size: .8rem; font-weight: 600;
+    box-shadow: 0 12px 26px rgba(30, 27, 24, .12);
+    z-index: 3;
+    animation: bob 5s ease-in-out infinite;
+  }
+  .float-chip small { display: block; font-weight: 500; color: var(--ink-soft); font-size: .72rem; }
+  .chip-a { top: 8%; left: -6%; }
+  .chip-b { bottom: 14%; right: -8%; animation-delay: 2.4s; }
+  @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
+
+  /* ---------- STATS STRIP ---------- */
+  .stats { background: var(--ink); color: #fff; padding: 40px 0; }
+  .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; text-align: center; }
+  .stat b {
+    display: block; font-family: 'Fraunces', Georgia, serif;
+    font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 700; color: var(--gold);
+  }
+  .stat span { font-size: .85rem; color: rgba(255, 255, 255, .72); letter-spacing: .04em; }
+
+  /* ---------- SECTIONS ---------- */
+  section { padding: 76px 0; }
+  .section-head { max-width: 640px; margin-bottom: 44px; }
+  h2 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: clamp(1.8rem, 3.4vw, 2.5rem); font-weight: 700;
+    letter-spacing: -.02em; margin-bottom: 14px;
+  }
+  h2 em { font-style: italic; color: var(--accent); }
+  .section-head p { color: var(--ink-soft); font-size: 1.02rem; }
+
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 30px 26px; transition: transform .2s ease, box-shadow .2s ease;
+    position: relative; overflow: hidden;
+  }
+  .card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg, var(--accent), var(--gold));
+    transform: scaleX(0); transform-origin: left; transition: transform .3s ease;
+  }
+  .card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(30, 27, 24, .1); }
+  .card:hover::before { transform: scaleX(1); }
+  .card .icon {
+    width: 46px; height: 46px; border-radius: 12px;
+    background: var(--bg-deep); display: grid; place-items: center;
+    font-size: 1.3rem; margin-bottom: 18px;
+  }
+  .card h3 { font-family: 'Fraunces', Georgia, serif; font-size: 1.2rem; font-weight: 600; margin-bottom: 10px; }
+  .card p { font-size: .94rem; color: var(--ink-soft); }
+
+  /* timeline */
+  .timeline { position: relative; max-width: 780px; }
+  .timeline::before {
+    content: ''; position: absolute; left: 8px; top: 6px; bottom: 6px;
+    width: 2px; background: var(--line);
+  }
+  .tl-item { position: relative; padding: 0 0 30px 40px; }
+  .tl-item:last-child { padding-bottom: 0; }
+  .tl-item::before {
+    content: ''; position: absolute; left: 0; top: 7px;
+    width: 18px; height: 18px; border-radius: 50%;
+    background: var(--bg); border: 3px solid var(--accent);
+  }
+  .tl-role { font-weight: 700; font-size: 1.02rem; }
+  .tl-role span { color: var(--accent); }
+  .tl-date { font-size: .8rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--gold); margin-bottom: 4px; }
+  .tl-desc { font-size: .94rem; color: var(--ink-soft); }
+
+  .skills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+  .skill {
+    font-size: .85rem; font-weight: 600; padding: 8px 15px; border-radius: 8px;
+    background: var(--bg-deep); color: var(--ink); border: 1px solid var(--line);
+    transition: background .18s ease, color .18s ease;
+  }
+  .skill:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+  /* ---------- CTA BAND ---------- */
+  .cta-band {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+    color: #fff; border-radius: 24px; padding: 60px 48px; text-align: center;
+    box-shadow: 0 26px 60px rgba(194, 89, 60, .3);
+  }
+  .cta-band h2 { color: #fff; }
+  .cta-band p { color: rgba(255, 255, 255, .9); max-width: 52ch; margin: 0 auto 30px; }
+  .cta-band .btn-primary { background: #fff; color: var(--accent-dark); box-shadow: 0 10px 24px rgba(0, 0, 0, .18); }
+  .cta-band .btn-primary:hover { background: var(--ink); color: #fff; }
+  .cta-band .btn-ghost { color: #fff; border-color: rgba(255, 255, 255, .7); }
+  .cta-band .btn-ghost:hover { background: rgba(255, 255, 255, .16); color: #fff; }
+  .cta-band .cta-row { justify-content: center; }
+
+  footer { border-top: 1px solid var(--line); padding: 34px 0; text-align: center; }
+  footer p { font-size: .87rem; color: var(--ink-soft); }
+
+  /* ---------- MODAL ---------- */
+  .modal-backdrop {
+    position: fixed; inset: 0; background: rgba(30, 27, 24, .55);
+    backdrop-filter: blur(4px); display: none; align-items: center; justify-content: center;
+    z-index: 100; padding: 20px;
+  }
+  .modal-backdrop.open { display: flex; animation: fade .2s ease; }
+  .modal {
+    background: var(--card); border-radius: 22px; max-width: 460px; width: 100%;
+    padding: 36px 32px; position: relative; animation: pop .25s cubic-bezier(.2, .9, .3, 1.4);
+  }
+  .modal h3 { font-family: 'Fraunces', Georgia, serif; font-size: 1.5rem; margin-bottom: 8px; }
+  .modal p { color: var(--ink-soft); font-size: .95rem; margin-bottom: 22px; }
+  .modal label { display: block; font-size: .82rem; font-weight: 600; margin-bottom: 6px; }
+  .modal input, .modal select {
+    width: 100%; padding: 12px 14px; border: 1px solid var(--line); border-radius: 10px;
+    font-size: .95rem; font-family: inherit; margin-bottom: 16px; background: var(--bg);
+    transition: border-color .18s ease;
+  }
+  .modal input:focus, .modal select:focus { outline: none; border-color: var(--accent); }
+  .modal .btn { width: 100%; justify-content: center; }
+  .modal-close {
+    position: absolute; top: 14px; right: 16px; background: none; border: 0;
+    font-size: 1.5rem; cursor: pointer; color: var(--ink-soft); line-height: 1;
+  }
+  .modal-close:hover { color: var(--accent); }
+  .toast {
+    position: fixed; bottom: 28px; left: 50%; transform: translate(-50%, 120%);
+    background: var(--ink); color: #fff; padding: 14px 26px; border-radius: 999px;
+    font-size: .92rem; font-weight: 500; z-index: 200;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, .3); transition: transform .35s cubic-bezier(.2, .9, .3, 1.3);
+  }
+  .toast.show { transform: translate(-50%, 0); }
+
+  @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes pop { from { opacity: 0; transform: scale(.94); } to { opacity: 1; transform: scale(1); } }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width: 900px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 44px; }
+    .portrait-col { order: -1; }
+    .portrait { max-width: 250px; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .cards { grid-template-columns: 1fr; }
+    .nav-links {
+      display: none; position: absolute; top: 100%; left: 0; right: 0;
+      flex-direction: column; align-items: flex-start; gap: 4px;
+      background: var(--bg); border-bottom: 1px solid var(--line); padding: 16px 24px;
+    }
+    .nav-links.open { display: flex; }
+    .nav-links a { padding: 10px 0; width: 100%; }
+    .nav-toggle { display: block; }
+    .float-chip { display: none; }
+    .cta-band { padding: 46px 26px; }
+  }
+  @media (max-width: 480px) {
+    .hero { padding: 56px 0 52px; }
+    .cta-row { flex-direction: column; }
+    .btn { justify-content: center; }
+    .stats-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="brand" href="#top">Josephine<span>.</span>Wong</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#strengths">Strengths</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact" class="nav-cta">Book a Session</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Facilitator · Trainer · Coach · Singapore</span>
+
+      <h1>
+        <span class="name">Josephine Wong</span>
+        <span class="roles">Facilitator <i>|</i> Trainer <i>|</i> Coach <i>|</i> NLP Master Practitioner</span>
+      </h1>
+
+      <p class="tagline">Creating platforms for good ol' conversations to happen &amp; unlocking individual potential.</p>
+
+      <p class="lede">
+        15+ years in Marketing, E-commerce Strategy, Leadership Coaching, and Facilitation —
+        including roles as Lazada's Chief of Staff and Channel Head.
+      </p>
+
+      <div class="badges">
+        <span class="badge"><b>15+</b> Yrs Leadership</span>
+        <span class="badge">NLP Master Practitioner</span>
+        <span class="badge">E-commerce Strategy &amp; Coaching</span>
+        <span class="badge">500+ Connections</span>
+      </div>
+
+      <div class="cta-row">
+        <a href="#contact" class="btn btn-primary" data-open-modal>Book a Coaching / Facilitation Session <span class="arrow">→</span></a>
+        <a href="#contact" class="btn btn-ghost" data-open-modal>Get in Touch</a>
+      </div>
+    </div>
+
+    <div class="portrait-col">
+      <div class="portrait">
+        <span class="monogram">JW</span>
+        <img class="photo" src="jowong.jpg" alt="Josephine Wong — Facilitator, Trainer and Coach"
+             onerror="this.remove()">
+        <span class="portrait-tag">Singapore · Est. 15+ yrs</span>
+        <div class="float-chip chip-a">Chief of Staff <small>ex-Lazada</small></div>
+        <div class="float-chip chip-b">NLP Master <small>Practitioner</small></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ STATS ============ -->
+<div class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat"><b>15+</b><span>Years Leadership</span></div>
+    <div class="stat"><b>500+</b><span>Professional Connections</span></div>
+    <div class="stat"><b>4</b><span>Core Roles: Facilitate · Train · Coach · Advise</span></div>
+    <div class="stat"><b>1</b><span>Luxury Channel Built from Scratch</span></div>
+  </div>
+</div>
+
+<!-- ============ STRENGTHS ============ -->
+<section id="strengths">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Key strengths, <em>in three themes</em></h2>
+      <p>Results-driven business leader with 15+ years of expertise in marketing and e-commerce — a proven track record in driving revenue growth through strategic initiatives.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="icon">📈</div>
+        <h3>Strategic &amp; Growth Leader</h3>
+        <p>15+ years scaling e-commerce, brand marketing, and business development operations — from Brand/Product Marketing to Communications and Digital.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🤝</div>
+        <h3>People &amp; Talent Enabler</h3>
+        <p>Dedicated coach, facilitator, and trainer helping individuals and middle managers bridge organizational strategy with reality.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🚀</div>
+        <h3>Execution &amp; Innovation</h3>
+        <p>Spearheaded luxury e-commerce (LazMall Prestige) and major O2O campaigns, including the Lazada Pop-Up Showcase on Orchard Road.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience" style="background: var(--bg-deep);">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Career <em>highlights</em></h2>
+      <p>Results-driven business leader with 15+ years of expertise in marketing and e-commerce (Brand/Product Marketing, Communications, Digital).</p>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-date">Feb 2024 – Dec 2024</div>
+        <div class="tl-role">Associate Trainer <span>· FirstCom Academy</span></div>
+        <div class="tl-desc">Focus: classroom instruction &amp; training facilitation.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">Dec 2022 – Jan 2024</div>
+        <div class="tl-role">Chief of Staff <span>· Lazada</span></div>
+        <div class="tl-desc">Communication facilitator, connector, and champion for team empowerment.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">Dec 2021 – Feb 2023</div>
+        <div class="tl-role">Head of LazMall Channels Ops <span>· Lazada</span></div>
+        <div class="tl-desc">Defined the end-to-end consumer experience on the LazMall channel.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">Jan 2021 – Dec 2021</div>
+        <div class="tl-role">Channel Manager, LazMall Prestige <span>· Lazada</span></div>
+        <div class="tl-desc">Built LazMall's luxury channel from scratch and curated top brand partnerships.</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">Aug 2020 – Jan 2021</div>
+        <div class="tl-role">Business Development Manager / Brand Key Account Manager <span>· Lazada</span></div>
+        <div class="tl-desc">Key account ownership across brand partnerships and business development.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Top <em>skills</em></h2>
+      <p>Fostering cross-functional collaborations, unlocking individual potential, and providing personal &amp; career development guidance.</p>
+    </div>
+    <div class="skills">
+      <span class="skill">Strategy</span>
+      <span class="skill">Stakeholder Management</span>
+      <span class="skill">Communication</span>
+      <span class="skill">Problem Solving</span>
+      <span class="skill">Coaching &amp; Mentoring</span>
+      <span class="skill">Training Facilitation</span>
+      <span class="skill">E-commerce Strategy</span>
+      <span class="skill">Brand &amp; Product Marketing</span>
+      <span class="skill">NLP</span>
+      <span class="skill">Leadership Coaching</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA BAND ============ -->
+<section id="contact" style="padding-top: 20px;">
+  <div class="wrap">
+    <div class="cta-band">
+      <h2>Let's start a good ol' conversation</h2>
+      <p>Book a coaching or facilitation session, or just reach out — the best platforms begin with a simple chat.</p>
+      <div class="cta-row">
+        <button class="btn btn-primary" data-open-modal>Book a Session <span class="arrow">→</span></button>
+        <button class="btn btn-ghost" data-open-modal>Get in Touch</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>© <span id="year"></span> Josephine Wong · Facilitator | Trainer | Coach | NLP Master Practitioner · Singapore</p>
+  </div>
+</footer>
+
+<!-- ============ MODAL ============ -->
+<div class="modal-backdrop" id="modal">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+    <h3 id="modalTitle">Book a Session</h3>
+    <p>Tell me what you'd like to work on and I'll get back to you shortly.</p>
+    <form id="bookForm">
+      <label for="bName">Your name</label>
+      <input id="bName" type="text" placeholder="Jane Tan" required>
+      <label for="bEmail">Email</label>
+      <input id="bEmail" type="email" placeholder="jane@example.com" required>
+      <label for="bType">Session type</label>
+      <select id="bType">
+        <option>Coaching session</option>
+        <option>Facilitation session</option>
+        <option>Training / workshop</option>
+        <option>Just getting in touch</option>
+      </select>
+      <button type="submit" class="btn btn-primary">Send Request <span class="arrow">→</span></button>
+    </form>
+  </div>
+</div>
+
+<div class="toast" id="toast">Thanks! Your request has been noted — Josephine will be in touch.</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // mobile nav
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+  // modal
+  const modal = document.getElementById('modal');
+  const openModal = () => { modal.classList.add('open'); document.getElementById('bName').focus(); };
+  const closeModal = () => modal.classList.remove('open');
+
+  document.querySelectorAll('[data-open-modal]').forEach(el =>
+    el.addEventListener('click', e => { e.preventDefault(); openModal(); })
+  );
+  document.getElementById('modalClose').addEventListener('click', closeModal);
+  modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+  // form -> toast
+  const toast = document.getElementById('toast');
+  document.getElementById('bookForm').addEventListener('submit', e => {
+    e.preventDefault();
+    closeModal();
+    e.target.reset();
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 3500);
+  });
+</script>
+</body>
+</html>
